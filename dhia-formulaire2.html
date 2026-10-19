@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dhia-formulaire.css">
+</head>
+<body>
+    <form action="" method="POST">
+        <h1>Mon premier formulaire HTML5</h1>
+        <fieldset id="main">
+            <legend>Vos données personnelles</legend>
+            <label for="">Nom <input type="text" name="t" id="t1" placeholder="Votre nom"></label><br>
+            <label for="">Prenom <input type="text" name="t" id="t2" placeholder="Votre prénom"></label><br>
+            <label for="">Date de naissance: <input type="date" name="d" id="d"></label><br>
+            <fieldset>
+                <legend>Lieu de naissence</legend>
+                <label for=""><input type="radio" name="r" id="r1">Seine-Saint-Denis</label>
+                <label for=""><input type="radio" name="r" id="r2">Reste du monde</label>
+            </fieldset>
+            <label for="">Adresse postale <textarea name="t3" id="t3" cols="30" rows="2" placeholder="Votre adresse"></textarea></label><br>
+            <label for="">Code Postal <input type="number" name="n" id="n" placeholder="93000" max="5"></label><br>
+            <label for="">Adresse électronique <input type="email" name="e" id="e"></label><br>
+            <label for="">page personnelles <input type="url" name="u" id="u"></label><br>
+            <label for="">Téléphone portable <input type="text" name="t5" id="t5" placeholder="0601234567" maxlength="10"></label><br>
+            <label for="">Semestre</label><select name="s" id="s">
+                <option value="S1">S1</option>
+                <option value="S2" selected>S2</option>
+                <option value="S3">S3</option>
+                <option value="S4">S4</option>
+            </select><br>
+            <label for="">Niveau en HTML <input type="range" name="ni" id="ni" max="10" min="0" step="1"></label><br>
+            <fieldset id="main2"><br>
+                <legend>Connaissances</legend>
+                <label for=""><input type="checkbox" name="c" id="c1" checked>HTML</label>
+                <label for=""><input type="checkbox" name="c" id="c2">CSS</label>
+                <label for=""><input type="checkbox" name="c" id="c3">formulaires</label>
+                <label for=""><input type="checkbox" name="c" id="c4">JavaScript</label>
+            </fieldset>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+        </fieldset>
+        <hr><p> Formulaire réalisé dans le cadre TP2 </p> <hr> 
+    </form>
+</body>
+</html>
